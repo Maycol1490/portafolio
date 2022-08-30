@@ -190,18 +190,18 @@ text-align: center;
 }
 /* servicios */
 
-#servicios {
+.servicios {
     padding: 22px;
     text-align: center;
     background-color:var(--color3);
 }
-#servicios .fila {
+.servicios .fila {
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     margin: 30px auto;
 }
-#servicios .fila .servicio{
+.servicios .fila .servicio{
     max-width: 350px;
     background-color: var(--color4);
     padding: 30px;
@@ -209,14 +209,14 @@ text-align: center;
     border-radius: 20%;
     transition: .5s;
 }
-#servicios .fila .servicio:hover {
+.servicios .fila .servicio:hover {
     box-shadow: 5px 5px 10px var(--color2), -5px -5px 10px var(--color2);
 }
-#servicios .fila .servicio h4 {
+.servicios .fila .servicio h4 {
     font-size: 22px;
     margin-bottom: 25px;
 }
-#servicios .fila .servicio .icono {
+.servicios .fila .servicio .icono {
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -225,23 +225,23 @@ text-align: center;
     padding: 20px;
     margin-bottom: 25px;
 }
-#servicios .fila .servicio hr {
+.servicios .fila .servicio hr {
     width: 30%;
     margin: auto;
     color: var(--color5);
     margin-bottom: 25px;
 }
-#servicios .fila .servicio ul{
+.servicios .fila .servicio ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-#servicios .fila .servicio p {
+.servicios .fila .servicio p {
     font-size: 14px;
     line-height: 22px;
 }
-#servicios_responsive{
+.servicios_responsive{
     display: none;
 }
 /* habilidades */
@@ -491,17 +491,17 @@ footer {
         background-color:var(--color2);
         color: var(--color3);
     }
-    #servicios {
+    .servicios {
         display: none;
     }
-    #servicios_responsive{
+    .servicios_responsive{
         display: block;
         padding: 22px;
         text-align: center;
         background-color:var(--color3);
         margin: 30px auto;
     }
-    #servicios_responsive .fila .servicio{
+    .servicios_responsive .fila .servicio{
         max-width: 350px;
         background-color: var(--color4);
         padding: 30px;
@@ -510,7 +510,7 @@ footer {
         transition: .5s;
         display: inline-block;
     }
-    #servicios_responsive .fila .servicio ul {
+    .servicios_responsive .fila .servicio ul {
         list-style: none;
         display: flex;
         justify-content: space-between;
