@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+    <title>MG.developer </title>
+</head>
+<body>
+    <!-- Inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido_header">
+                    <h1><span>{M</span>G}</h1>
+                    <nav id="nav" class="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!-- iconos -->
+                    <div id="icono_nav" onclick="responsiveMenu()"><i><i class='bx bx-menu'></i></i></div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2><span>Maycol Guerrero</span> Desarrollador Web</h2>
+                <p class="descripcion">Creo y programo diseños unicos para darle estetica y valor a tus productos</p>
+                    <a href="#portafolio">Ir a portafolio</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Sobre mi -->
+    <section id="sobremi">
+        <div class="contenedor_foto">
+            <img src="img/perfil.png" alt="yo">
+        </div>
+        <div class="sobremi">
+            <p class="titulo_seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Maycol Guerrero</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p class="responsive">Desarrolador Full Stack en formacion con conocimientos en HTML,CSS,JavaScript y python.
+                Soy una persona a la que le gusta siempre dar el 100% y mucho mas para 
+                porder alcanzar el mejor desempeño.
+            </p>
+            <p class="responsive">Mi perfil esta orientado al logro, la proactividad,la resolucion de problemas,
+                trabajo en equipo y a un aprendizaje constante.
+                He encontrado una gran pasion por el desarrollo web y la implementacion de 
+                aplicaciones que busquen suplir las nesecidades sociales.
+                Busco oportunidades que me permitan aprender cada dia atraves de retos,
+                trabajar en equipo e implementar mis conocimientos para el bien comun y de mis compañeros de trabajo.
+            </p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+    <!-- servicios -->
+    <section id="servicios">
+        <h3 class="titulo_seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class='bx bx-code-alt'></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios_tag">
+                    <li>Web</li>
+                    <li>Diseño Grafico</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Maquetacion , programacion y posicionamiento en buscadores
+                    al igual que una cohesion y coherencia de la marca o el producto
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class='bx bx-code-alt'></i></span>
+                <h4>Monitoreo de sitios Web</h4>
+                <hr>
+                <ul class="servicios_tag">
+                    <li>Web</li>
+                    <li>Diseño Web</li>
+                    <li>Actualizaciones</li>
+                </ul>
+                <p>Monitoreo y actualizo tu sitio web segun tu idea.
+                    Mantengo al margen los errores que puedan presentar 
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class='bx bx-code-alt'></i></span>
+                <h4>Codigos Dinamicos</h4>
+                <hr>
+                <ul class="servicios_tag">
+                    <li>JavaScript</li>
+                    <li>Html-Css</li>
+                    <li>Python</li>
+                </ul>
+                <p>Creo codigo que pueda ser mas facil de entender y de leer ya que 
+                    mantengo actualizando mis conocimientos
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class='bx bx-code-alt'></i></span>
+                <h4>Integraciones Graficas</h4>
+                <hr>
+                <ul class="servicios_tag">
+                    <li>Videos</li>
+                    <li>Audios</li>
+                    <li>Imagenes con efectos</li>
+                </ul>
+                <p>las integraciones visuales se hacen con efectos que el cliente se sienta 
+                    satisfecho
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- carusel para responsive -->
+    <section id="servicios_responsive">
+        <h3 class="titulo_seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="servicio">
+                        <span class="icono"><i class='bx bx-code-alt'></i></span>
+                        <h4>Diseño de Sitios Web</h4>
+                        <hr>
+                        <ul class="servicios_tag">
+                            <li>Web</li>
+                            <li>Diseño Grafico</li>
+                            <li>SEO</li>
+                        </ul>
+                        <p>Maquetacion , programacion y posicionamiento en buscadores
+                            al igual que una cohesion y coherencia de la marca o el producto
+                        </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="servicio">
+                        <span class="icono"><i class='bx bx-code-alt'></i></span>
+                        <h4>Codigos Dinamicos</h4>
+                        <hr>
+                        <ul class="servicios_tag">
+                            <li>JavaScript</li>
+                            <li>Html-Css</li>
+                            <li>Python</li>
+                        </ul>
+                        <p>Creo codigo que pueda ser mas facil de entender y de leer ya que 
+                            mantengo actualizando mis conocimientos
+                        </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="servicio">
+                        <span class="icono"><i class='bx bx-code-alt'></i></span>
+                        <h4>Monitoreo de sitios Web</h4>
+                        <hr>
+                        <ul class="servicios_tag">
+                            <li>Web</li>
+                            <li>Diseño Web</li>
+                            <li>Actualizaciones</li>
+                        </ul>
+                        <p>Monitoreo y actualizo tu sitio web segun tu idea.
+                            Mantengo al margen los errores que puedan presentar 
+                        </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="servicio">
+                        <span class="icono"><i class='bx bx-code-alt'></i></span>
+                        <h4>Integraciones Graficas</h4>
+                        <hr>
+                        <ul class="servicios_tag">
+                            <li>Videos</li>
+                            <li>Audios</li>
+                            <li>Imagenes con efectos</li>
+                        </ul>
+                        <p>las integraciones visuales se hacen con efectos que el cliente se sienta 
+                            satisfecho
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+    <!-- Hbilidades -->
+        <div class="contenedor_skills" id="skills">
+            <h3>HABILIDADES</h3>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Html & Css</p>
+                    <span class="porcentaje">90%</span>
+                </div>
+                <div class="barra">
+                    <div id="html" class=""></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>JavaScript</p>
+                    <span class="porcentaje">95%</span>
+                </div>
+                <div class="barra">
+                    <div id="js" class=""></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>python</p>
+                    <span class="porcentaje">70%</span>
+                </div>
+                <div class="barra">
+                    <div id="python" class=""></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Diseño Grafico</p>
+                    <span class="porcentaje">90%</span>
+                </div>
+                <div class="barra">
+                    <div id="ps" class=""></div>
+                </div>
+            </div>
+        </div>
+    <!-- portafolio -->
+    <section id="portafolio">
+        <h3 class="titulo_seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/img1.png" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/img2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/img3.png" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/img4.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- contactame -->
+    <section id="contacto">
+        <h3 class="titulo_seccion">Contactanos Ahora</h3>
+        <div class="contenedor_form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input_mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input_mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema" class="input_full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje ..." class="input_full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn_enviar">
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <p>Todos los derechos reservados</p>
+        <a href="https://www.google.com/" class="btn btn-primary">ir a google</a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
