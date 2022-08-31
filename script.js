@@ -45,7 +45,7 @@ form.addEventListener("submit",function(e) {
     const  temaUser =e.target.temaUser.value;
     const  msjUser =e.target.msjUser.value;
     if(nameUser.trim()===""||emailUser.trim()===""||temaUser.trim()===""||msjUser.trim()==="")
-    return alert("nada")
+    return 
     const newUser ={
         name : nameUser,
         email : emailUser,
