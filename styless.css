@@ -36,7 +36,7 @@ html {
     background-color: var(--color5);
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
     top: 0;
 }
 #inicio .contenido header .contenido_header {
@@ -54,8 +54,8 @@ color: var(--color2);
 }
 #inicio .contenido header .contenido_header nav ul {
     list-style: none;
-    display: flex;
     align-items: center;
+    display: flex;
 }
 #inicio .contenido header .contenido_header nav ul li a {
     text-decoration: none;
@@ -195,13 +195,13 @@ text-align: center;
     text-align: center;
     background-color:var(--color3);
 }
-.servicios .fila {
+.servicios .desk .fila {
     display: flex;
     flex-wrap: wrap;
     max-width: 1100px;
     margin: 30px auto;
 }
-.servicios .fila .servicio{
+.servicios .desk .fila .servicio{
     width: calc(25% - 16px);
     background-color: var(--color4);
     padding: 30px;
@@ -209,14 +209,14 @@ text-align: center;
     border-radius: 20%;
     transition: .5s;
 }
-.servicios .fila .servicio:hover {
+.servicios .desk .fila .servicio:hover {
     box-shadow: 5px 5px 10px var(--color2), -5px -5px 10px var(--color2);
 }
-.servicios .fila .servicio h4 {
+.servicios .desk .fila .servicio h4 {
     font-size: 22px;
     margin-bottom: 25px;
 }
-.servicios .fila .servicio .icono {
+.servicios .desk .fila .servicio .icono {
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -225,20 +225,20 @@ text-align: center;
     padding: 20px;
     margin-bottom: 25px;
 }
-.servicios .fila .servicio hr {
+.servicios .desk .fila .servicio hr {
     width: 30%;
     margin: auto;
     color: var(--color5);
     margin-bottom: 25px;
 }
-.servicios .fila .servicio ul{
+.servicios .desk .fila .servicio ul{
     list-style:none;
     align-items:center;
     margin-bottom: 10px;
     padding: 0%;
 }
 
-.servicios .fila .servicio p {
+.servicios .desk .fila .servicio p {
     font-size: 14px;
     line-height: 22px;
 }
@@ -429,7 +429,7 @@ footer {
 /* responsive */
 @media screen and (max-width :800px) {
     nav{
-        display:none;
+        display: none;
     }
     nav.responsive {
         display: block;
@@ -490,7 +490,7 @@ footer {
         background-color:var(--color2);
         color: var(--color3);
     }
-    .servicios {
+    .servicios .desk {
         display: none;
     }
     .servicios_responsive{
