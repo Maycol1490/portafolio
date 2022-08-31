@@ -35,3 +35,24 @@ function efectoHabilidades() {
         document.getElementById("ps").classList.add("barra_progreso4")
     }
 }
+// funcionalidad del formulario
+const form = document.querySelector("#form");
+let users=[];
+form.addEventListener("submit",function(e) {
+    e.preventDefault();
+    const  nameUser =e.target.nameUser.value;
+    const  emailUser =e.target.emailUser.value;
+    const  temaUser =e.target.temaUser.value;
+    const  msjUser =e.target.msjUser.value;
+    if(nameUser.trim()===""||emailUser.trim()===""||temaUser.trim()===""||msjUser.trim()==="")
+    return alert("nada")
+    const newUser ={
+        name : nameUser,
+        email : emailUser,
+        tema : temaUser,
+        msj : msjUser,
+        id : users.length + 1,
+    };
+    users.push(newUser)
+    form.reset();
+})

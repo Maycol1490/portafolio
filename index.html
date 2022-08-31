@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Inicio -->
-    <section id="inicio" class="inicio">
+    <section id="inicio" class="">
         <div class="contenido">
             <header>
                 <div class="contenido_header">
@@ -286,16 +286,16 @@
     <section id="contacto">
         <h3 class="titulo_seccion">Contactanos Ahora</h3>
         <div class="contenedor_form">
-            <form action="">
+            <form action="" id="form">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input_mitad">
-                    <input type="text" placeholder="Direccion de Email" class="input_mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input_mitad" id="nameUser" name="nameUser">
+                    <input type="text" placeholder="Direccion de Email" class="input_mitad" id="emailUser" name="emailUser">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema" class="input_full">
+                    <input type="text" placeholder="Tema" class="input_full" id="temaUser" name="temaUser">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje ..." class="input_full"></textarea>
+                    <textarea cols="30" rows="10" placeholder="Tu Mensaje ..." class="input_full" id="msjUser" name="msjUser"></textarea>
                 </div>
                 <input type="submit" value="Enviar Mensaje" class="btn_enviar">
             </form>
