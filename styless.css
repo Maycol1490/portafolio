@@ -40,10 +40,11 @@ html {
     top: 0;
 }
 #inicio .contenido header .contenido_header {
-    display: flex;
+    display:flex;
     justify-content:space-between;
     align-items: flex-start;
     padding: 10px 20px;
+    
 }
 #inicio .contenido header .contenido_header h1{
 text-align: center;
@@ -448,7 +449,7 @@ footer {
         margin: 5px 0;
     }
     #icono_nav{
-        display: block;
+        display:block;
     }
     #inicio .contenido .presentacion h2 {
         font-size: 40px;
