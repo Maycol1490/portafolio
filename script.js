@@ -1,6 +1,6 @@
 //funcion menu
 function responsiveMenu(){
-let menu = document.getElementById("nav");
+let menu = document.getElementById("navw");
 if (menu.className === "") {
     menu.className = "responsive"
 } else{
@@ -16,7 +16,7 @@ function seleccionar(link) {
     opciones[3].className = "";
     opciones[4].className = "";
     link.className ="seleccionado"
-    let menuOf = document.getElementById("nav")
+    let menuOf = document.getElementById("navw")
     menuOf.className = "";
 
 }

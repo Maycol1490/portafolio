@@ -243,6 +243,9 @@ text-align: center;
     font-size: 14px;
     line-height: 22px;
 }
+.servicios_responsive{
+    display: none;
+}
 /* habilidades */
 .contenedor_skills {
     background: linear-gradient( rgba(243, 24, 24, 0.7), white),url("img/habilidades.jpg");
@@ -488,14 +491,30 @@ footer {
         background-color:var(--color2);
         color: var(--color3);
     }
-    #servicios {
-        padding: 50px 15px;
+    .servicios .desk {
+        display: none;
     }
-    #servicios .fila{
+    .servicios_responsive{
         display: block;
+        padding: 22px;
+        text-align: center;
+        background-color:var(--color3);
+        margin: 30px auto;
     }
-    #servicios .fila .servicio {
-        margin: 10px auto;
+    .servicios_responsive .fila .servicio{
+        max-width: 350px;
+        background-color: var(--color4);
+        padding: 30px;
+        margin: 0 5px;
+        border-radius: 20%;
+        transition: .5s;
+        display: inline-block;
+    }
+    .servicios_responsive .fila .servicio ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
     }
     .contenedor_skills{
         padding: 50px 20px;
